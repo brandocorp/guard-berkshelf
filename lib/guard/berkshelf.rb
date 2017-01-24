@@ -4,7 +4,7 @@ require 'berkshelf/cli'
 module Guard
   class Berkshelf < Plugin
     def initialize(options = {})
-      @berks = Berkshelf::Cli.new
+      @berks = ::Berkshelf::Cli.new
       super
     end
 
@@ -17,7 +17,7 @@ module Guard
     end
 
     def reload
-      @berks = Berkshelf::Cli.new
+      @berks = ::Berkshelf::Cli.new
     end
 
     def run_all
