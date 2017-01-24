@@ -38,6 +38,10 @@ module Guard
 
     private
 
+    def berks
+      @berks
+    end
+
     def _run
       File.exists?('Berksfile.lock') ? berks.update : berks.install
     end
