@@ -1,5 +1,5 @@
 require 'guard/compat/plugin'
-require 'berkshelf'
+require 'berkshelf/cli'
 
 module Guard
   class Berkshelf < Plugin
