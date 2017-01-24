@@ -1,0 +1,4 @@
+guard :berkshelf do
+  watch('Berksfile')
+  watch('metadata.rb')
+end
